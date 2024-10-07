@@ -27,5 +27,7 @@ jobs:
         run:  python -m pytest tests/test_unit
       - name: run fonctional test
         run: behave tests/test_functional/features
+      - name: Quality
+        run: ./tests/tests_pyramid.sh
 
 
